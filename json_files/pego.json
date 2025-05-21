@@ -1,0 +1,45 @@
+[{
+    "name": "pego1",
+    "teleporter": "pego1",
+    "delay": 3300
+  },
+  {
+    "name": "pego2",
+    "teleporter": "pego2",
+    "delay": 3300
+  },
+  {
+    "name": "pego3",
+    "teleporter": "pego3",
+    "delay": 3300
+  },
+  {
+    "name": "pego4",
+    "teleporter": "pego4",
+    "delay": 3300
+  },
+  {
+    "name": "pego5",
+    "teleporter": "pego5",
+    "delay": 3300
+  },
+  {
+    "name": "pego6",
+    "teleporter": "pego6",
+    "delay": 3300
+  },
+  {
+    "name": "pego7",
+    "teleporter": "pego7",
+    "delay": 3300
+  },
+  {
+    "name": "pego8",
+    "teleporter": "pego8",
+    "delay": 3300
+  },
+  {
+    "name": "pego9",
+    "teleporter": "pego9",
+    "delay": 3300
+  }]

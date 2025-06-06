@@ -10,7 +10,7 @@ import settings
 import ASA.config 
 
 def is_open():
-    return template.check_template_no_bounds("tribelog_check",0.8)
+    return template.check_template_no_bounds("tribelog_check",0.7)
     
 def open():
     attempts = 0

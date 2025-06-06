@@ -1,12 +1,12 @@
 [{
     "name": "gacha1",
-    "teleporter": "GACHAPAIR1",
+    "teleporter": "GACHAPAIR01",
     "resource_type": "element",
     "side": "left"
   },
   {
     "name": "gacha2",
-    "teleporter": "GACHAPAIR1",
+    "teleporter": "GACHAPAIR01",
     "resource_type": "element",
     "side": "right"
   },

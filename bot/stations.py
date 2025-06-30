@@ -52,7 +52,7 @@ class gacha_station(base_task):
         berry_metadata = custom_stations.get_station_metadata(settings.berry_station)
         iguanadon_metadata = custom_stations.get_station_metadata(settings.iguanadon)
 
-        if (berry_station and (time_between > config.time_to_reberry*60*60)) or time_between > config.time_to_reberry*60*60: # if time is greater than 4 hours since the last time you went to berry station 
+        if (berry_station or time_between > config.time_to_reberry*60*60): # if time is greater than 4 hours since the last time you went to berry station 
             teleporter.teleport_not_default(berry_metadata)                    # or if berry station is true( when you go to tekpod and drop all ) and the time between has been longer than 30 mins since youve last been 
             if settings.external_berry: 
                 logs.logger.debug("sleeping for 20 seconds as external")
@@ -120,6 +120,7 @@ class render_station(base_task):
         global berry_station 
         berry_station = True # setting to true as we will be away for mostlikly for a few hours
         if bot.render.render_flag == False:
+            logs.logger.debug(f"render flag:{bot.render.render_flag} we are trying to get into the pod now")
             player_state.reset_state()
             teleporter.teleport_not_default(settings.bed_spawn)
             bot.render.enter_tekpod()

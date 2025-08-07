@@ -1,6 +1,6 @@
 [{
     "name": "pego1",
-    "teleporter": "pego1",
+    "teleporter": "pego01",
     "delay": 3300
   },
   {
@@ -41,5 +41,20 @@
   {
     "name": "pego9",
     "teleporter": "pego9",
+    "delay": 3300
+  },
+{
+    "name": "pego10",
+    "teleporter": "pego10",
+    "delay": 3300
+  },
+{
+    "name": "pego11",
+    "teleporter": "pego11",
+    "delay": 3300
+  },
+{
+    "name": "pego12",
+    "teleporter": "pego12",
     "delay": 3300
   }]

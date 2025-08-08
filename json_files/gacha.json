@@ -218,7 +218,7 @@
     "name": "gacha37",
     "teleporter": "GACHAPAIR19",
     "resource_type": "element",
-    "side": "right"
+    "side": "left"
   },
   {
     "name": "gacha38",
@@ -230,7 +230,7 @@
     "name": "gacha39",
     "teleporter": "GACHAPAIR20",
     "resource_type": "element",
-    "side": "right"
+    "side": "left"
   },
   {
     "name": "gacha40",
@@ -242,7 +242,7 @@
     "name": "gacha41",
     "teleporter": "GACHAPAIR21",
     "resource_type": "element",
-    "side": "right"
+    "side": "left"
   },
   {
     "name": "gacha42",
@@ -254,7 +254,7 @@
     "name": "gacha43",
     "teleporter": "GACHAPAIR22",
     "resource_type": "element",
-    "side": "right"
+    "side": "left"
   },
   {
     "name": "gacha44",
@@ -266,7 +266,7 @@
     "name": "gacha45",
     "teleporter": "GACHAPAIR23",
     "resource_type": "element",
-    "side": "right"
+    "side": "left"
   },
   {
     "name": "gacha46",
@@ -278,7 +278,7 @@
     "name": "gacha47",
     "teleporter": "GACHAPAIR24",
     "resource_type": "element",
-    "side": "right"
+    "side": "left"
   },
   {
     "name": "gacha48",

@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 from typing import Callable
 import asyncio
+import utils
 import logs.botoptions as botoptions
 import pyautogui
 import settings
@@ -11,6 +12,7 @@ import logs.discordbot as discordbot
 import bot.stations as stations
 import task_manager
 import win32gui
+import win32clipboard
 import win32con
 import sys
 import pygetwindow as gw
@@ -200,6 +202,17 @@ async def disconnect(interaction: discord.Interaction):
         sys.exit() 
     else:
         print("No CMD window found.")
+
+@bot.tree.command()
+async def stuck(interaction: discord.Interaction):
+    utils.press_key('Enter')
+    utils.press_key("ConsoleKeys")
+    time.sleep(0.5)
+    utils.press_key("ConsoleKeys")
+    pyautogui.press('c')
+    pyautogui.press('c')
+    pyautogui.press('c')
+    utils.press_key('Enter')
 
 @bot.event
 async def on_ready():

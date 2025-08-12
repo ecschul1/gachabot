@@ -203,11 +203,22 @@ async def disconnect(interaction: discord.Interaction):
     else:
         print("No CMD window found.")
 
+
+
 @bot.tree.command()
 async def stuck(interaction: discord.Interaction):
     utils.press_key('Enter')
     utils.press_key("ConsoleKeys")
     time.sleep(0.5)
+    utils.press_key("ConsoleKeys")
+    pyautogui.press('c')
+    pyautogui.press('c')
+    pyautogui.press('c')
+    utils.press_key('Enter')
+
+
+@bot.tree.command()
+async def fixccc(interaction: discord.Interaction):
     utils.press_key("ConsoleKeys")
     pyautogui.press('c')
     pyautogui.press('c')

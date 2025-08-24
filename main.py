@@ -181,12 +181,16 @@ async def shutdown(interaction: discord.Interaction):
 
 @bot.tree.command()
 async def disconnect(interaction: discord.Interaction):
-    pyautogui.press('ConsoleKeys')
-    time.sleep(0.5)
+    await interaction.response.send_message("Shutting down script...")  # respond fast
+
+    # now run blocking work in background
+    import asyncio
+    await asyncio.sleep(0.5)
+    utils.press_key("ConsoleKeys")
     pyautogui.write('exit', interval=0.05)
     pyautogui.press('enter')
-    time.sleep(2)
-    await interaction.response.send_message("Shutting down script...")
+    await asyncio.sleep(2)
+
     print("Shutting down script...")
     cmd_windows = [win for win in gw.getAllWindows() if "cmd" in win.title.lower() or "system32" in win.title.lower()]
 
@@ -196,12 +200,13 @@ async def disconnect(interaction: discord.Interaction):
 
         win32gui.ShowWindow(hwnd, win32con.SW_RESTORE) 
         win32gui.SetForegroundWindow(hwnd)  
-        time.sleep(1)         
+        await asyncio.sleep(1)         
         win32gui.PostMessage(hwnd, win32con.WM_CLOSE, 0, 0)
         print("Shutting down...")
-        sys.exit() 
+        sys.exit()
     else:
         print("No CMD window found.")
+
 
 
 

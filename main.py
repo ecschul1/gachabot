@@ -181,9 +181,9 @@ async def shutdown(interaction: discord.Interaction):
 
 @bot.tree.command()
 async def disconnect(interaction: discord.Interaction):
-    pyautogui.press('`')  # or whatever key opens the game console
+    pyautogui.press('ConsoleKeys')
     time.sleep(0.5)
-    pyautogui.write('disconnect', interval=0.05)
+    pyautogui.write('exit', interval=0.05)
     pyautogui.press('enter')
     time.sleep(2)
     await interaction.response.send_message("Shutting down script...")
